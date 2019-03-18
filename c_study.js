@@ -7,9 +7,8 @@ const rl = readline.createInterface({
 
 
 var pcar = new Array ();
-
 var pbike = new Array ();
-
+var datenow = Date();
 
 
 console.log(pcar.length);
@@ -42,7 +41,9 @@ rl.on('line', (line) => {
       Vehicle        : CAR
       Vehicle ID     : ${answer2}
       Duration (Hour): ${answer3}
-      Total payment  : RM${result}`);
+      Total payment  : RM${result}
+      Date           : ${datenow}
+      `);
  
     });
   });
@@ -68,7 +69,9 @@ rl.on('line', (line) => {
       Vehicle        : BIKE
       Vehicle ID     : ${answer2}
       Duration (Hour): ${answer3}
-      Total payment  : RM${result}`);
+      Total payment  : RM${result}
+      Date           : ${datenow}
+      `);
    
      
     });
